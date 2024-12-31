@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.slider {
+  background-image: url(../IMAGE/codioful-formerly-gradienta-OzfD79w8ptA-unsplash.jpg);
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.images-container {
+    margin-top: 20px;
+  width: 98%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.images {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  gap: 20px; /* Adds space between images */
+}
+
+.images img {
+  width: 50%; /* Adjusted to ensure partial visibility */
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.arrows {
+  position: absolute;
+  bottom: 0px;
+  width: 67%;
+  display: flex;
+  justify-content: space-between;
+
+  margin-left: 18%;
+   margin-right: 15%;
+  /* padding: auto; */
+}
+
+.arrow {
+  /* margin: 0 80px; */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
