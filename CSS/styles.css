@@ -70,3 +70,11 @@ body {
 .arrow:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+@media (max-width: 768px) {
+  .slider {
+    height: 350px;
+  }
+  .images-container {
+    height: 300px;
+  }
+}
